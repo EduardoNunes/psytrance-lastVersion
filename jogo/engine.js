@@ -11,25 +11,29 @@ function red() {
 function orange() {
     const imagem = '../jogo/botoes/buttonOrangeachatado.png';
     const horizontal = -0.13;
-    criarNotas(imagem, horizontal);
+    const classe = 'orange';
+    criarNotas(imagem, horizontal, classe);
 }
 
 function yellow() {
     const imagem = '../jogo/botoes/buttonYellowachatado.png';
     const horizontal = 0;
-    criarNotas(imagem, horizontal);
+    const classe = 'yellow';
+    criarNotas(imagem, horizontal, classe);
 }
 
 function green() {
     const imagem = '../jogo/botoes/buttonGreenachatado.png';
     const horizontal = 0.14;
-    criarNotas(imagem, horizontal);
+    const classe = 'green';
+    criarNotas(imagem, horizontal, classe);
 }
 
 function blue() {
     const imagem = '../jogo/botoes/buttonBlueachatado.png';
     const horizontal = 0.275;
-    criarNotas(imagem, horizontal);
+    const classe = 'blue';
+    criarNotas(imagem, horizontal, classe);
 }
 
 

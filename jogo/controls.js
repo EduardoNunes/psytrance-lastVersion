@@ -6,15 +6,19 @@ function teclaDown(){
             animacaoUp('cinza-1');            
         break;
         case 83: case 67: case 72: // Letra S, C, H laranja.
+            noteHit('orange');
             animacaoUp('cinza-2');
         break;
-        case 74: case 73: case 68: // Letra J, D, I amarelo.      
+        case 74: case 73: case 68: // Letra J, D, I amarelo. 
+            noteHit('yellow');     
             animacaoUp('cinza-3');
         break;
         case 75: case 79: // Letra K, O verde.
+            noteHit('green');
             animacaoUp('cinza-4');
         break;
         case 76: case 80: // Letra L, P azul.
+            noteHit('blue');
             animacaoUp('cinza-5');
         break;
         case 32:  // barra de espaço play/pause.
