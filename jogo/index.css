@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(../images/Cogumels.jpg);
+    background-size: 100%;
+}
+
+/* main .cobertura::before {    
+    position: absolute;
+    content: "";
+
+    top: 0;
+    left: 0;
+    height: 250px;
+    width: 100%;
+    
+    background-image: url(/images/Cogumels.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    mask-image: linear-gradient(to top, transparent 0%, black 20%);
+    mask-repeat: no-repeat;
+    mask-position: center bottom;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 25%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center bottom;
+    
+    z-index: 10000;
+  } */
+
+main .container {
+    display: flex;
+    justify-content: center;
+
+    width: 600px;
+    height: 600px;
+
+
+    background-image: url(pista.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .container img {
+    position: absolute;
+    justify-content: center;
+}
+
+main .container .notas-chegada {
+    display: flex;
+
+    width: 345px;
+    height: 60px;
+
+    margin-top: 518px;
+}
+
+main .container .notas-chegada img {
+    width: 63px;
+}
+
+main .container .notas-chegada .cinza-2 {
+    margin-left: 70px;
+}
+
+main .container .notas-chegada .cinza-3 {
+    margin-left: 142px;
+}
+
+main .container .notas-chegada .cinza-4 {
+    margin-left: 213px;
+}
+
+main .container .notas-chegada .cinza-5 {
+    margin-left: 284px;
+}
