@@ -1,15 +1,15 @@
-const velocidade = 60;
-let zIndexRed = 9999;
+let velocidade = 1;
+let zIndex = 9999;
 
 function red() {
     const imagem = '../jogo/botoes/buttonRedAchatado.png';
-    const horizontal = -0.25;
+    const horizontal = -0.27;
     criarNotas(imagem, horizontal);
 }
 
 function orange() {
     const imagem = '../jogo/botoes/buttonOrangeachatado.png';
-    const horizontal = -0.15;
+    const horizontal = -0.13;
     criarNotas(imagem, horizontal);
 }
 
@@ -21,13 +21,13 @@ function yellow() {
 
 function green() {
     const imagem = '../jogo/botoes/buttonGreenachatado.png';
-    const horizontal = 0.15;
+    const horizontal = 0.13;
     criarNotas(imagem, horizontal);
 }
 
 function blue() {
     const imagem = '../jogo/botoes/buttonBlueachatado.png';
-    const horizontal = 0.25;
+    const horizontal = 0.275;
     criarNotas(imagem, horizontal);
 }
 
@@ -48,6 +48,8 @@ function criarNotas(imagem, horizontal) {
 
     img.style.left = '50%';
     img.style.transform = 'translateX(-50%)';
+    img.style.zIndex = zIndex;
+    zIndex--;
 
     container.appendChild(img);
 
@@ -56,8 +58,9 @@ function criarNotas(imagem, horizontal) {
 
 function moverNotas(img, horizontal) {
     const container = document.querySelector('.nota-criada');
-    const verticalY = 1;
+    const verticalY = velocidade;
     const horizontalX = horizontal;
+    let tamanho = 0;
 
     let posY = 0;
     let posX = window.innerWidth/2;
@@ -65,13 +68,17 @@ function moverNotas(img, horizontal) {
     function atualizarPosicao(timestamp) {
         const elapsedTime = timestamp - startTime;
         const distanciaY = (elapsedTime / 1000) * verticalY;
-        const distanciaX = (elapsedTime / 1000) * horizontalX;
+        const distanciaX = distanciaY * horizontalX;
 
         posY += distanciaY;
         posX += distanciaX;
 
+        tamanho = posY;
+
         img.style.top = posY + 'px';
         img.style.left = posX + 'px';
+        img.style.width = (tamanho/10) + 'px';
+        img.style.height = ((tamanho/2)/10) + 'px';
 
         if (posY < container.clientHeight) {
             requestAnimationFrame(atualizarPosicao);
