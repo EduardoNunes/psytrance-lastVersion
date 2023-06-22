@@ -15,7 +15,7 @@ main {
     background-size: 100%;
 }
 
-/* main .cobertura::before {    
+main .cobertura::before {    
     position: absolute;
     content: "";
 
@@ -36,7 +36,7 @@ main {
     -webkit-mask-position: center bottom;
     
     z-index: 10000;
-  } */
+}
 
 main .container {
     display: flex;

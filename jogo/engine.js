@@ -4,7 +4,8 @@ let zIndex = 9999;
 function red() {
     const imagem = '../jogo/botoes/buttonRedAchatado.png';
     const horizontal = -0.27;
-    criarNotas(imagem, horizontal);
+    const classe = 'red';
+    criarNotas(imagem, horizontal, classe);
 }
 
 function orange() {
@@ -21,7 +22,7 @@ function yellow() {
 
 function green() {
     const imagem = '../jogo/botoes/buttonGreenachatado.png';
-    const horizontal = 0.13;
+    const horizontal = 0.14;
     criarNotas(imagem, horizontal);
 }
 
@@ -38,13 +39,14 @@ function removerNotas(img) {
     }
 }
 
-function criarNotas(imagem, horizontal) {
+function criarNotas(imagem, horizontal, classe) {
     const container = document.querySelector('.nota-criada');
 
     let img = document.createElement('img');
     img.src = imagem;
     img.width = 8;
     img.height = 4;
+    img.classList.add(classe);
 
     img.style.left = '50%';
     img.style.transform = 'translateX(-50%)';
