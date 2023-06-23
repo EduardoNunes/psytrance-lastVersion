@@ -1,4 +1,4 @@
-let velocidade = 1;
+let velocidade = 10;
 let zIndex = 9999;
 let tempoPausado = 0;
 
@@ -78,7 +78,7 @@ function moverNotas(img, horizontal) {
         }
 
         posY += velocidade;
-        posX += horizontal;
+        posX += horizontal * velocidade;
 
         tamanho = posY;
 
