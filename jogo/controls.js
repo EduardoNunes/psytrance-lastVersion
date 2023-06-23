@@ -1,3 +1,5 @@
+let pausar = false;
+
 function teclaDown(){
     let tecla = window.event.keyCode;
     switch (tecla){
@@ -21,7 +23,10 @@ function teclaDown(){
             noteHit('blue');
             animacaoUp('cinza-5');
         break;
-        case 32:  // barra de espaço play/pause.
+        case 32:  // barra de espaço play/pause.        
+            pauseGame();
+        break;
+        case 13:  // enter começar o game
             musicTest();
         break;
     }

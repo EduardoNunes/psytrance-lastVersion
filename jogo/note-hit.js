@@ -8,8 +8,7 @@ function noteHit(cor) {
                     }
                     else {
                         console.log('perdeu ponto')
-                    }
-                    
+                    }                    
                 break;
                 case 'orange':
                     if(nota.classList.contains('orange')) {

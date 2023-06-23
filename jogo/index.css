@@ -11,7 +11,7 @@ main {
     width: 100vw;
     height: 100vh;
 
-    background-image: url(../images/Cogumels.jpg);
+    background-image: url(../images/backgrounds/Cogumels.jpg);
     background-size: 100%;
 }
 
@@ -24,7 +24,7 @@ main {
     height: 250px;
     width: 100%;
     
-    background-image: url(/images/Cogumels.jpg);
+    background-image: url(../images/backgrounds/Cogumels.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -45,7 +45,7 @@ main .container {
     width: 600px;
     height: 600px;
 
-    background-image: url(pista.png);
+    background-image: url(../images/scenarios/pista.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
