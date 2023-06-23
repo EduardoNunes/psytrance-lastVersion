@@ -86,7 +86,7 @@ function moverNotas(img, horizontal) {
         img.style.width = (tamanho/10) + 'px';
         img.style.height = ((tamanho/2)/10) + 'px';
 
-        if (posY < container.clientHeight) {
+        if (posY < container.clientHeight - 50) {
             requestAnimationFrame(atualizarPosicao);
         } else {
             removerNotas(img);
