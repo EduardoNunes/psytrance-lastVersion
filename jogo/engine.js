@@ -1,4 +1,4 @@
-let velocidade = 10;
+let velocidade = 2;
 let zIndex = 9999;
 let tempoPausado = 0;
 
@@ -72,9 +72,8 @@ function moverNotas(img, horizontal) {
 
     function atualizarPosicao() {
         if (pause) {
-            var input = prompt('Digite algo:');
-            pause = false;
-            console.log('Você digitou: ' + input);
+            pause = true;
+            return;
         }
 
         posY += velocidade;

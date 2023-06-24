@@ -3,10 +3,9 @@ let pause = false;
 function pauseGame() {
     if (!pause) {
         pause = true;
-        console.log(pause)
+        timeouts.forEach((timeout) => clearTimeout(timeout));
     }
     else {
-        pause = false;       
-        console.log(pause)
+        pause = false;
     }
 }

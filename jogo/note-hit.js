@@ -1,42 +1,42 @@
 function noteHit(cor) {
-        const nota = document.querySelector('.nota-criada img');
-        if(nota) { // confere se a nota foi criada
+        const imagem = document.querySelector('.nota-criada img');
+        if(imagem) { // confere se a imagem foi criada
             switch(cor) {
                 case 'red':            
-                    if(nota.classList.contains('red')) {
-                        scoringRegion(nota);                
+                    if(imagem.classList.contains('red')) {
+                        scoringRegion(imagem, cor);
                     }
                     else {
                         console.log('perdeu ponto')
                     }                    
                 break;
                 case 'orange':
-                    if(nota.classList.contains('orange')) {
-                        scoringRegion(nota);
+                    if(imagem.classList.contains('orange')) {
+                        scoringRegion(imagem, cor);
                     }
                     else {
                         console.log('perdeu ponto')
                     }
                 break;
                 case 'yellow':
-                    if(nota.classList.contains('yellow')) {
-                        scoringRegion(nota);
+                    if(imagem.classList.contains('yellow')) {
+                        scoringRegion(imagem, cor);
                     }
                     else {
                         console.log('perdeu ponto')
                     }
                 break;
                 case 'green':
-                    if(nota.classList.contains('green')) {
-                        scoringRegion(nota);
+                    if(imagem.classList.contains('green')) {
+                        scoringRegion(imagem, cor);
                     }
                     else {
                         console.log('perdeu ponto')
                     }
                 break;
                 case 'blue':
-                    if(nota.classList.contains('blue')) {
-                        scoringRegion(nota);
+                    if(imagem.classList.contains('blue')) {
+                        scoringRegion(imagem, cor);
                     }
                     else {
                         console.log('perdeu ponto')

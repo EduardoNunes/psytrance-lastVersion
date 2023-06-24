@@ -83,3 +83,20 @@ main .container .notas-chegada .cinza-4 {
 main .container .notas-chegada .cinza-5 {
     margin-left: 284px;
 }
+
+main .container .fire-hit {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    height: 90px;
+    width: 365px;
+
+    top: 455px;
+}
+
+main .container .fire-hit img {
+    display: none;
+
+    width: 60px;
+}

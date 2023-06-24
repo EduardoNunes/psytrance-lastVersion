@@ -1,9 +1,11 @@
-function scoringRegion(imagem) {
+function scoringRegion(imagem, cor) {
+
     if (parseInt(imagem.style.top) > 500) {
         removerNotas(imagem);
-        console.log(imagem.style.top);
+        fireHit(cor);
+        console.log('ACERTOU', imagem.style.top)
     }
     else {
-        console.log('não funcionou', imagem.style.top)
+        console.log('NÃO ACERTOU', imagem.style.top)
     }
 }
