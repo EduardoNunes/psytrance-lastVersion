@@ -5,7 +5,8 @@ let vitoriaOuDerrota = 10;
 function pontos(acerto) {
     if (acerto) {
         ponto += 10;
-
+        
+        placarScore(ponto);
         chartAnimation(true);
     }
     else {
@@ -16,8 +17,12 @@ function pontos(acerto) {
 function sequenciaNotas(acerto) {
     if (acerto) {
         sequencia++;
+
+        placarStrike(sequencia);
     }
     else {
         sequencia = 0;
+
+        placarStrike(sequencia);
     }
 }

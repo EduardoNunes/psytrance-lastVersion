@@ -11,7 +11,7 @@ function red() {
 
 function orange() {
     const imagem = '../images/buttons/buttonOrangeachatado.png';
-    const horizontal = -0.13;
+    const horizontal = -0.135;
     const classe = 'orange';
     criarNotas(imagem, horizontal, classe);
 }

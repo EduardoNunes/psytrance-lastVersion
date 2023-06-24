@@ -122,3 +122,31 @@ main .container .quadro .img {
     width: 90px;
     height: 90px;
 }
+
+main .container .placar {
+    position: absolute;
+    
+    width: 500px;
+    height: 90px;
+
+    margin-top: 300px;
+}
+
+main .container .placar .score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 90px;
+    height: 90px;
+
+    background-color: red;
+}
+
+main .container .placar #score, 
+main .container .placar #strike {
+    font-size: 30px;
+
+    color: #ffffff;
+    background-color: blue;
+}

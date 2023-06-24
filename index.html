@@ -10,8 +10,21 @@
     <main>
         <div class="cobertura"></div>
         <div class="container">
+            <div class="quadro">
+                <div class="img" id="quadroPizza"></div>
+            </div>
+
+            <div class="placar">
+                <div class="score">
+                    <span id="score">0</span>
+                    <span id="strike">0</span>
+                </div>
+            </div>
+
             <div class="nota-criada"></div>
+
             <script src="jogo/engine.js"></script>
+
             <div class="notas-chegada">
                 <img class="cinza-1" src="images/buttons/button grey achatado.png" alt="Botão Cinza">
                 <img class="cinza-2" src="images/buttons/button grey achatado.png" alt="Botão Cinza">
@@ -19,12 +32,11 @@
                 <img class="cinza-4" src="images/buttons/button grey achatado.png" alt="Botão Cinza">
                 <img class="cinza-5" src="images/buttons/button grey achatado.png" alt="Botão Cinza">
             </div>
+
             <div class="fire-hit">
                 <img class="fogo-1" src="images/effects/fogo2-200.png" alt="Fogo de acerto de nota">
             </div>
-            <div class="quadro">
-                <div class="img" id="quadroPizza"></div>
-            </div>
+            
         </div>
     </main> 
     
@@ -37,5 +49,6 @@
     <script src="jogo/fire-hit-animation.js"></script>
     <script src="jogo/pontos.js"></script>
     <script src="/jogo/chart-animation.js"></script>
+    <script src="jogo/placar.js"></script>
 </body>
 </html>
