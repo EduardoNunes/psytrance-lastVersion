@@ -1,18 +1,23 @@
 let ponto = 0;
 let sequencia = 0;
+let vitoriaOuDerrota = 10;
 
 function pontos(acerto) {
-    ponto += 10;
-    console.log('Pontos = ', ponto)
+    if (acerto) {
+        ponto += 10;
+
+        chartAnimation(true);
+    }
+    else {
+        chartAnimation(false);
+    }    
 }
 
 function sequenciaNotas(acerto) {
     if (acerto) {
         sequencia++;
-        console.log('Sequencia true', sequencia)
     }
     else {
         sequencia = 0;
-        console.log('Sequencia false', sequencia)
     }
 }

@@ -1,5 +1,6 @@
 function noteHit(cor) {
         const imagem = document.querySelector('.nota-criada img');
+
         if(imagem) { // confere se a imagem foi criada
             switch(cor) {
                 case 'red':            
@@ -7,7 +8,8 @@ function noteHit(cor) {
                         scoringRegion(imagem, cor);
                     }
                     else {
-                        console.log('perdeu ponto')
+                        chartAnimation(false);
+                        sequenciaNotas(false);
                     }                    
                 break;
                 case 'orange':
@@ -15,7 +17,8 @@ function noteHit(cor) {
                         scoringRegion(imagem, cor);
                     }
                     else {
-                        console.log('perdeu ponto')
+                        chartAnimation(false);
+                        sequenciaNotas(false);
                     }
                 break;
                 case 'yellow':
@@ -23,7 +26,8 @@ function noteHit(cor) {
                         scoringRegion(imagem, cor);
                     }
                     else {
-                        console.log('perdeu ponto')
+                        chartAnimation(false);
+                        sequenciaNotas(false);
                     }
                 break;
                 case 'green':
@@ -31,7 +35,8 @@ function noteHit(cor) {
                         scoringRegion(imagem, cor);
                     }
                     else {
-                        console.log('perdeu ponto')
+                        chartAnimation(false);
+                        sequenciaNotas(false);
                     }
                 break;
                 case 'blue':
@@ -39,12 +44,14 @@ function noteHit(cor) {
                         scoringRegion(imagem, cor);
                     }
                     else {
-                        console.log('perdeu ponto')
+                        chartAnimation(false);
+                        sequenciaNotas(false);
                     }
                 break;
             }
         }
         else {
-            console.log('perdeu ponto')
+            chartAnimation(false);
+            sequenciaNotas(false);
         }
 }

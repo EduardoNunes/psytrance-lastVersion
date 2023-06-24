@@ -100,3 +100,25 @@ main .container .fire-hit img {
 
     width: 60px;
 }
+
+main .container .quadro {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    
+    width: 500px;
+    height: 90px;
+
+    top: 400px;
+}
+
+main .container .quadro .img {
+    display: block;
+    
+    background-image: url(../images/chart-points/pizza\ amarelo1.png);
+    background-size: 90px;
+    background-repeat: no-repeat;
+
+    width: 90px;
+    height: 90px;
+}

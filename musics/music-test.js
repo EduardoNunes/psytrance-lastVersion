@@ -6,6 +6,8 @@ function musicTest() {
     timeouts.push(setTimeout(yellow, 1000));
     timeouts.push(setTimeout(green, 1500));
     timeouts.push(setTimeout(blue, 2000));
+    timeouts.push(setTimeout(green, 2500));
+    timeouts.push(setTimeout(yellow, 3000));
     timeouts.push(setTimeout(orange, 3500));
     timeouts.push(setTimeout(yellow, 4000));
     timeouts.push(setTimeout(green, 4500));
@@ -19,4 +21,10 @@ function musicTest() {
     timeouts.push(setTimeout(yellow, 8500));
     timeouts.push(setTimeout(green, 9000));
     timeouts.push(setTimeout(blue, 9500));
+    timeouts.push(setTimeout(green, 10000));
+    timeouts.push(setTimeout(orange, 10500));
+    timeouts.push(setTimeout(yellow, 11000));
+    timeouts.push(setTimeout(green, 11500));
+    timeouts.push(setTimeout(blue, 12000));
+    timeouts.push(setTimeout(green, 12500));
 }

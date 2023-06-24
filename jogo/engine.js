@@ -1,4 +1,4 @@
-let velocidade = 2;
+let velocidade = 4;
 let zIndex = 9999;
 let tempoPausado = 0;
 
@@ -40,7 +40,7 @@ function blue() {
 
 function removerNotas(img) {
     if (img) {
-        img.remove();
+        img.remove();  
     }
 }
 
@@ -76,6 +76,10 @@ function moverNotas(img, horizontal) {
             return;
         }
 
+        if (!document.body.contains(img)) {
+            return; 
+        }
+
         posY += velocidade;
         posX += horizontal * velocidade;
 
@@ -88,8 +92,11 @@ function moverNotas(img, horizontal) {
 
         if (posY < container.clientHeight - 50) {
             requestAnimationFrame(atualizarPosicao);
-        } else {
+        } 
+        else {
             removerNotas(img);
+            chartAnimation(false);
+            sequenciaNotas(false);
         }
     }
 
