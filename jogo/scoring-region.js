@@ -1,11 +1,18 @@
-function scoringRegion(imagem, cor) {
+let acerto = false;
 
+function scoringRegion(imagem, cor) {
+    
     if (parseInt(imagem.style.top) > 500) {
+        acerto = true;
+
         removerNotas(imagem);
-        fireHit(cor);
-        console.log('ACERTOU', imagem.style.top)
+        fireHit(cor);        
+        pontos(acerto);
+        sequenciaNotas(acerto);
     }
     else {
-        console.log('NÃO ACERTOU', imagem.style.top)
+        acerto = false;
+        
+        sequenciaNotas(acerto);
     }
 }
