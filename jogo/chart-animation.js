@@ -2,7 +2,6 @@ let pontosQuadro = 15;
 function chartAnimation(vitoriaOuDerrota) {
     if (vitoriaOuDerrota) {
         pontosQuadro++;
-        console.log('Pontos Quadro ganha', pontosQuadro)
 
         if(pontosQuadro >= 25) {
             pontosQuadro = 25;
@@ -10,7 +9,6 @@ function chartAnimation(vitoriaOuDerrota) {
     }
     else {
         pontosQuadro--;
-        console.log('Pontos Quadro perde', pontosQuadro)
 
         if(pontosQuadro <= 0) {
             console.log('DERROTA')

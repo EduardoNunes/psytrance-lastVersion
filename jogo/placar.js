@@ -1,10 +1,10 @@
 const scoreTela = document.getElementById('score');
 const strikeTela = document.getElementById('strike');
 
-function placarScore(valor) {
-    scoreTela.textContent = valor;
+function placarScore(ponto) {
+    scoreTela.textContent = ponto;
 }
 
-function placarStrike(sequencia) {
-    strikeTela.textContent = sequencia;
+function placarStrike(multiplicado) {
+    strikeTela.textContent = multiplicado;
 }

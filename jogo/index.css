@@ -123,7 +123,7 @@ main .container .quadro .img {
     height: 90px;
 }
 
-main .container .placar {
+main .container .area-placar {
     position: absolute;
     
     width: 500px;
@@ -132,21 +132,53 @@ main .container .placar {
     margin-top: 300px;
 }
 
-main .container .placar .score {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+main .container .area-placar .placar {
     width: 90px;
     height: 90px;
 
-    background-color: red;
+    padding: 0 10px;
+
+    background-color: #2b2b2b;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
-main .container .placar #score, 
-main .container .placar #strike {
-    font-size: 30px;
+main .container .area-placar .placar .score p {
+    display: flex;
+    justify-content: center;
 
-    color: #ffffff;
-    background-color: blue;
+    font-size: 14px;
+}
+
+main .container .area-placar .placar .score #score {
+    font-size: 22px;
+}
+
+main .container .area-placar .placar .strike {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    width: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%;
+
+
+    background-color: #ffffff;
+}
+
+main .container .area-placar .placar .strike p {
+    color: #2b2b2b;
+    margin-right: 5px;
+}
+
+main .container .area-placar .placar .strike #strike {
+    font-size: 34px;
+    font-weight: 900;
+    color: #2b2b2b;
 }
